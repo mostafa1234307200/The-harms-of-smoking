@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>مدرسة الأردن الأساسية المختلطة</title>
+</head>
+<body style="text-align:center; direction:rtl; font-family:Tahoma;">
+    <h1>مدرسة الأردن الأساسية المختلطة</h1>
+    <h2>كيف ستبدو بعد 30 سنة من التدخين؟</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <br><br>
+        <button type="submit">ارفع الصورة</button>
+    </form>
+    {% if processed_image %}
+        <h3>الصورة المعدلة:</h3>
+        <img src="{{ processed_image }}" width="300">
+    {% endif %}
+</body>
+</html>
